@@ -1,18 +1,15 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[show edit update destroy]
-  before_action :authenticate_user!, except: %i[index show] 
+  before_action :authenticate_user!, except: %i[index show]
   # GET /posts
   # GET /posts.json
   def index
-   
     @posts = Post.all
 
     unless user_signed_in?
 
       @posts.each do |post|
-
         post.user.name = 'Anonymous'
-
       end
 
     end
@@ -28,10 +25,7 @@ class PostsController < ApplicationController
   end
 
   # GET /posts/1/edit
-  def edit
-
-  end
-
+  def edit; end
 
   # POST /posts
   # POST /posts.json
