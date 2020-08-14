@@ -38,7 +38,7 @@ $ bundle install
 $ rake db:migrate
 
 # To start the rails console, run
-$ rails c
+$ rails s
 ```
 
 You can create your own data from here

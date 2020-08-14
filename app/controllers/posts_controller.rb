@@ -1,10 +1,21 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[show edit update destroy]
-  before_action :authenticate_user!, only: %i[new create]
+  before_action :authenticate_user!, except: %i[index show] 
   # GET /posts
   # GET /posts.json
   def index
+   
     @posts = Post.all
+
+    unless user_signed_in?
+
+      @posts.each do |post|
+
+        post.user.name = 'Anonymous'
+
+      end
+
+    end
   end
 
   # GET /posts/1
@@ -17,7 +28,10 @@ class PostsController < ApplicationController
   end
 
   # GET /posts/1/edit
-  def edit; end
+  def edit
+
+  end
+
 
   # POST /posts
   # POST /posts.json
@@ -26,7 +40,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new }
