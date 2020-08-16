@@ -1,24 +1,68 @@
-# README
+# Members Only!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built With
 
-Things you may want to cover:
+- Ruby on Rails
 
-* Ruby version
+## Project Description
 
-* System dependencies
+In this project, we’ll be building an exclusive clubhouse where your members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
 
-* Configuration
+## Screenshots
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+Post: Logout             | Post: Login
+:-------------------------:|:-------------------------:
+![image](https://res.cloudinary.com/ddx9vnnsx/image/upload/v1597331072/post-logout_bng3iv.png)  |  ![image](https://res.cloudinary.com/ddx9vnnsx/image/upload/v1597331038/post-login_zrr1af.png)
 
-* Services (job queues, cache servers, search engines, etc.)
+# Getting Started 🚀
 
-* Deployment instructions
+These instructions will get you a copy of the project up and running on your local machine.
 
-* ...
+## How To Use 🔧
+
+From your command line, first clone the project:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/DickensJuma/Members-only
+
+# Go into the project folder
+$ code Members-only
+
+# run bundle install to get the gems
+$ bundle install
+
+#Run the migrations
+$ rake db:migrate
+
+# To start the rails console, run
+$ rails s
+```
+
+You can create your own data from here
+
+## CONTRIBUTORS
+
+👤 **Paul Ogolla**
+
+- Github: [@paulzay](https://github.com/paulzay)
+- Twitter: [@_paulzay_](https://twitter.com/_paulzay_)
+- Linkedin: [Paul Ogolla](https://linkedin.com/in/paulogolla)
+
+👤 **Dickens Juma**
+
+- LinkedIn: [Dickens Juma](https://www.linkedin.com/in/dickens-juma/)
+- GitHub: [@DickensJuma](https://github.com/DickensJuma)
+- Twitter: [@juma_dickens](https://twitter.com/juma_dickens)
+
+## Acknowledgments
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
